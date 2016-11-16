@@ -1,0 +1,89 @@
+body {
+    background-color: linen;
+}
+
+.container {
+    width: 50%;
+    margin: auto;
+}
+
+.article-container {
+    margin: 5px;
+    background-color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+.article-container .body {
+    width: 70%;
+    margin-right: 5px;
+}
+
+.article-container .body .title a {
+    color: red;
+    text-align: left;
+}
+
+.article-container .body .author {
+    color: green;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.article-container .body .publish-at {
+    color: green;
+    text-align: left;
+    margin-top: 15px;
+}
+
+.article-container .image {
+    width: 29%;
+    height: 150px;
+}
+
+.article-container .image img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Portrait tablet to landscape and desktop */
+
+@media (min-width: 768px) and (max-width: 979px) {
+    .container {
+        width: 100%;
+    }
+    .article-container {
+        padding: 15px;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+@media (min-width: 551px) and (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+}
+
+/* Landscape phone to portrait tablet */
+
+@media (max-width: 550px) {
+    .container {
+        width: 100%;
+    }
+    .article-container .body {
+        width: 100%;
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+    .article-container .image {
+        display: none;
+    }
+
+}
