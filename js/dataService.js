@@ -1,3 +1,4 @@
+// service for providing source data from API
 class DataService {
     constructor(dataUrl) {
         this.dataUrl = dataUrl;

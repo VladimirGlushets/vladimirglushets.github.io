@@ -1,4 +1,4 @@
-
+// When I use modules feature it will be a private function (I think)
 const createArticle = function (articleJson) {
   return `
   <div class="article-container">
@@ -20,6 +20,7 @@ const createArticle = function (articleJson) {
   </div> `;
 }
 
+// service for converting JSON objects to HTML articles objects
 class ArticleService{
   getArticlesHtml(articles){
     return articles.map((el) => createArticle(el));

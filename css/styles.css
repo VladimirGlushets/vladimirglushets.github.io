@@ -52,7 +52,7 @@ body {
 
 /* Portrait tablet to landscape and desktop */
 
-@media (min-width: 768px) and (max-width: 979px) {
+@media all and (min-width: 768px) and (max-width: 979px) {
     .container {
         width: 100%;
     }
@@ -65,7 +65,7 @@ body {
     }
 }
 
-@media (min-width: 551px) and (max-width: 768px) {
+@media all and (min-width: 551px) and (max-width: 768px) {
     .container {
         width: 100%;
     }
@@ -73,7 +73,7 @@ body {
 
 /* Landscape phone to portrait tablet */
 
-@media (max-width: 550px) {
+@media all and (max-width: 550px) {
     .container {
         width: 100%;
     }
