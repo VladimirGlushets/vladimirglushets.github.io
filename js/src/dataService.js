@@ -18,18 +18,5 @@ class DataService {
         .catch((err) => {
             console.log(err);
         });
-
-
-        // return fetch(this.dataUrl).then((response) => {
-        //   if(response.status != 200)
-        //   {
-        //     console.log(response);
-        //   }
-        //   else {
-        //     return response.json();
-        //   }
-        // }).catch((err) => {
-        //     console.log(err);
-        // });
     }
 };

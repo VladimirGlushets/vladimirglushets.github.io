@@ -7,13 +7,11 @@ dataService.getData().then((data) => {
 
     // after getting data I converted it into html text
     let articlesHtml = articleService.getArticlesHtml(data);
-    //let articlesHtml = articleService.getArticlesHtml(data.articles);
 
     // found container for pushing html articles
     let articlesContainer = document.getElementsByClassName('articles');
 
     if (articlesContainer && articlesContainer.length > 0) {
-
         // pushed articles into container
         articlesContainer[0].innerHTML = articlesHtml.join(' ');
     }
