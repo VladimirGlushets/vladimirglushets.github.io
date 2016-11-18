@@ -15,27 +15,30 @@ var DataService = function () {
     _createClass(DataService, [{
         key: "getData",
         value: function getData() {
-            return axios.get(this.dataUrl).then(function (response) {
+            // return axios.get(this.dataUrl)
+            //   .then((response) => {
+            //     if(response.status != 200)
+            //     {
+            //       console.log(response);
+            //     }
+            //     else {
+            //       return response.data.articles;
+            //     }
+            //   })
+            //   .catch((err) => {
+            //       console.log(err);
+            //   });
+
+
+            return fetch(this.dataUrl).then(function (response) {
                 if (response.status != 200) {
                     console.log(response);
                 } else {
-                    return response.data.articles;
+                    return response.json();
                 }
             }).catch(function (err) {
                 console.log(err);
             });
-
-            // return fetch(this.dataUrl).then((response) => {
-            //   if(response.status != 200)
-            //   {
-            //     console.log(response);
-            //   }
-            //   else {
-            //     return response.json();
-            //   }
-            // }).catch((err) => {
-            //     console.log(err);
-            // });
         }
     }]);
 
