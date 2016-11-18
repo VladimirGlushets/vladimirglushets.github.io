@@ -6,7 +6,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 // When I use modules feature it will be a private function (I think)
 var createArticle = function createArticle(articleJson) {
-  return "\n  <div class=\"article-container\">\n      <div class=\"body\">\n          <div class=\"title\">\n            <a href=\"" + articleJson.url + "\" alt=\"Full article\" target=\"_blank\">\n              <h2>" + articleJson.title + "</h2>\n            </a>\n          </div>\n          <div class=\"author\">by " + articleJson.author + "</div>\n          <div class=\"description\">" + articleJson.description + "</div>\n          <div class=\"publish-at\">" + articleJson.publishedAt + "</div>\n      </div>\n      <div class=\"image\">\n        <a href=\"" + articleJson.url + "\" alt=\"Full article\" target=\"_blank\">\n          <img src=\"" + articleJson.urlToImage + "\">\n        </a>\n      </div>\n  </div> ";
+  return "\n  <div class=\"article-container\">\n      <div class=\"body\">\n      <span class=\"image\">\n        <a href=\"" + articleJson.url + "\" alt=\"Full article\" target=\"_blank\">\n          <img src=\"" + articleJson.urlToImage + "\">\n        </a>\n      </span>\n\n          <div class=\"title\">\n            <a href=\"" + articleJson.url + "\" alt=\"Full article\" target=\"_blank\">\n              <h2>" + articleJson.title + "</h2>\n            </a>\n          </div>\n          <div class=\"author\">by " + articleJson.author + "</div>\n          <div class=\"description\">" + articleJson.description + "</div>\n          <div class=\"publish-at\">" + articleJson.publishedAt + "</div>\n      </div>\n\n      \n  </div>";
 };
 
 // service for converting JSON objects to HTML articles objects
