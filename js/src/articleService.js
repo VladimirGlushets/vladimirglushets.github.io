@@ -11,7 +11,7 @@ const createArticle = function (articleJson) {
 
           <div class="title">
             <a href="${articleJson.url}" alt="Full article" target="_blank">
-              <h2>${articleJson.title}</h2>
+              ${articleJson.title}
             </a>
           </div>
           <div class="author">by ${articleJson.author}</div>

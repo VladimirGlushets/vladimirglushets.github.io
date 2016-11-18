@@ -22,9 +22,15 @@ body {
     display: inline-block;
 }
 
-.article-container .body .title a {
-    color: red;
+.article-container .body .title {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    font-weight: bold;
     text-align: left;
+}
+
+.article-container .body .title a {
+  color: red;
 }
 
 .article-container .body .author {
@@ -41,10 +47,11 @@ body {
 
 .article-container .image {
     float: right;
+    margin-left: 15px;
 }
 
 .article-container .image img {
-    width: 208px;
+    width: 250px;
     height: 156px;
 }
 
