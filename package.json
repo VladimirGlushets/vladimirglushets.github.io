@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "compile": "babel -d js/lib/ js/src/",
+    "watch": "babel -d js/lib/ js/src/ -w",
     "prepublish": "npm run compile"
   },
   "repository": {

@@ -1,6 +1,3 @@
-require('es6-promise').polyfill();
-require('isomorphic-fetch');
-
 // service for providing source data from API
 class DataService {
     constructor(dataUrl) {
