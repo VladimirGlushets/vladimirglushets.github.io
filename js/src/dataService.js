@@ -5,31 +5,31 @@ class DataService {
     }
 
     getData() {
-      // return axios.get(this.dataUrl)
-      //   .then((response) => {
-      //     if(response.status != 200)
-      //     {
-      //       console.log(response);
-      //     }
-      //     else {
-      //       return response.data.articles;
-      //     }
-      //   })
-      //   .catch((err) => {
-      //       console.log(err);
-      //   });
-
-
-        return fetch(this.dataUrl).then((response) => {
+      return axios.get(this.dataUrl)
+        .then((response) => {
           if(response.status != 200)
           {
             console.log(response);
           }
-          else {            
-            return response.json();
+          else {
+            return response.data.articles;
           }
-        }).catch((err) => {
+        })
+        .catch((err) => {
             console.log(err);
         });
+
+
+        // return fetch(this.dataUrl).then((response) => {
+        //   if(response.status != 200)
+        //   {
+        //     console.log(response);
+        //   }
+        //   else {
+        //     return response.json();
+        //   }
+        // }).catch((err) => {
+        //     console.log(err);
+        // });
     }
 };
