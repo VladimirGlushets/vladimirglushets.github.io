@@ -6,7 +6,7 @@ let articleService = new ArticleService();
 dataService.getData().then((data) => {
 
     // after getting data I converted it into html text
-    let articlesHtml = articleService.getArticlesHtml(data.articles);
+    let articlesHtml = articleService.getArticlesHtml(data);
 
     // found container for pushing html articles
     let articlesContainer = document.getElementsByClassName('articles');
