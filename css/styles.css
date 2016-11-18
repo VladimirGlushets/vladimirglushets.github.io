@@ -53,6 +53,7 @@ body {
 .article-container .image img {
     width: 250px;
     height: 156px;
+    border: 0px;
 }
 
 
