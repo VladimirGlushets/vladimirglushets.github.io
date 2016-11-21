@@ -1,0 +1,27 @@
+body {
+    margin: 0px;
+    background-color: linen;
+}
+
+.header-container {
+    background: #ffc183;
+}
+
+.header-container .wrapper {
+    width: 50%;
+    margin: auto;
+}
+
+.header-container .header-content {
+    display: inline-block;
+}
+
+.header-container .wrapper .logo {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-size: 36px;
+}
+
+.logo a {
+    text-decoration: none;
+}
