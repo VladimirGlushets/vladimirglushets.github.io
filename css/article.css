@@ -70,12 +70,12 @@
 /* Portrait tablet to landscape and desktop */
 
 @media all and (min-width: 768px) and (max-width: 979px) {
-    .container {
+    .content-container {
         width: 100%;
     }
     .article-container {
         padding: 15px;
-        display: flex;
+        /*display: flex;*/
         justify-content: center;
         flex-direction: row;
         align-items: center;
@@ -83,7 +83,7 @@
 }
 
 @media all and (min-width: 551px) and (max-width: 768px) {
-    .container {
+    .content-container {
         width: 100%;
     }
 }
@@ -92,7 +92,7 @@
 /* Landscape phone to portrait tablet */
 
 @media all and (max-width: 550px) {
-    .container {
+    .content-container {
         width: 100%;
     }
     .article-container .body {
