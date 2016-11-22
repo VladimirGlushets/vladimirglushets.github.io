@@ -15,8 +15,8 @@
     width: 70px;
 }
 
-.content-container .back-btn:hover{
-  background-color: #ffc183;
+.content-container .back-btn:hover {
+    background-color: #ffc183;
 }
 
 .article-container {
@@ -58,12 +58,23 @@
 .article-container .image {
     float: right;
     margin-left: 15px;
+    display: table;
+}
+
+.article-container .image .floater {
+    display: table-cell;
+    vertical-align: middle;
+    width: 250px;
+    height: 150px;
 }
 
 .article-container .image img {
-    width: 250px;
-    height: 156px;
     border: 0px;
+    float: right;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 
